@@ -1,0 +1,3 @@
+messages:
+  no-mount: '&cYou cannot mount a pig unless the block above is empty!'
+  no-ride-into: '&cYou cannot ride a pig into a space where the block above is not empty!'
