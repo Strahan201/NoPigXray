@@ -4,11 +4,15 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.Map;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.permissions.Permission;
+import org.bukkit.permissions.PermissionDefault;
 import org.bukkit.plugin.PluginManager;
 import com.sylvcraft.events.EntityMount;
 import com.sylvcraft.events.PlayerMove;
 
 public class NoPigXray extends JavaPlugin {
+  public Permission bypass = new Permission("nopigxray.bypass", PermissionDefault.FALSE);
+
   @Override
   public void onEnable() {
     PluginManager pm = getServer().getPluginManager();

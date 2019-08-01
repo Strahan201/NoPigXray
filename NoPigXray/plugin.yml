@@ -1,6 +1,6 @@
 name: NoPigXray
 author: Strahan
 main: com.sylvcraft.NoPigXray
-version: 1.01
+version: 1.02
 api-version: 1.13
 description: Prevents the pig x-ray exploit
