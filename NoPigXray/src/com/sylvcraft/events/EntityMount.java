@@ -19,7 +19,7 @@ public class EntityMount implements Listener {
   public void onEntityMount(EntityMountEvent e) {
 		if (!(e.getEntity() instanceof Player)) return;
 		if (!(e.getMount() instanceof Pig)) return;
-		if (e.getMount().getWorld().getBlockAt(e.getMount().getLocation().add(0, 1, 0)).isEmpty()) return;
+		if (!plugin.isBlockable(e.getMount().getWorld().getBlockAt(e.getMount().getLocation().add(0, 1, 0)))) return;
 		if (e.getEntity().hasPermission(plugin.bypass)) return;
 	
 		plugin.msg("no-mount", (Player)e.getEntity());

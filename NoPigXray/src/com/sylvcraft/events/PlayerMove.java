@@ -19,7 +19,7 @@ public class PlayerMove implements Listener {
 		if (!hasActuallyMoved(e.getFrom(), e.getTo())) return;
 		if (e.getPlayer().getVehicle() == null) return;
 		if (e.getPlayer().getVehicle().getType() != EntityType.PIG) return;
-		if (e.getPlayer().getWorld().getBlockAt(e.getPlayer().getLocation().add(0, 1, 0)).isEmpty()) return;
+		if (!plugin.isBlockable(e.getPlayer().getWorld().getBlockAt(e.getPlayer().getLocation().add(0, 1, 0)))) return;
 		if (e.getPlayer().hasPermission(plugin.bypass)) return;
 		
 		plugin.msg("no-ride-into", e.getPlayer());

@@ -1,3 +1,27 @@
 messages:
+  access-denied: '&cAccess denied!'
+  player-only: 'This only works in game!'
   no-mount: '&cYou cannot mount a pig unless the block above is empty!'
   no-ride-into: '&cYou cannot ride a pig into a space where the block above is not empty!'
+  material-added: '&6%material% &eadded to the exceptions.'
+  material-removed: '&6%material% &eremoved from the exceptions.'
+  hold-item: '&6Please hold the item to remove/add in your hand.'
+  config-reloaded: '&6Configuration reloaded!'
+  cmd-toggle-item: '&6/npxr &7- &eToggles exception for the item in hand'
+  cmd-hotbar-item: '&6/npxr hotbar add &7- &eAdds exceptions for all items in hotbar%br%&6/npxr hotbar remove &7- &eRemoves exceptions for all items in hotbar'
+  cmd-reload: '&6/npxr reload &7- &eReloads config from disk'
+  cmd-msg-view: '&6/npxr msg [msgcode] &7- &eView the set message for that code' 
+  cmd-msg-set: '&6/npxr msg [msgcode] [msg] &7- &eSet the message for that code'
+  cmd-msg-list: '&6/npxr msg list &7- &eList the available message codes'
+  msgcodes-header: '&6Available message codes:'
+  msgcodes-data: '&e%msgcode%'
+  invalid-msgcode: '&cThat is not a valid message code!'
+  msgcode-view: '&e%msgcode% &6is currently &e%msg%'
+  msgcode-set: '&e%msgcode% &6has been set to &e%msg%'
+exceptions:
+- ACACIA_LEAVES
+- BIRCH_LEAVES
+- DARK_OAK_LEAVES
+- JUNGLE_LEAVES
+- OAK_LEAVES
+- SPRUCE_LEAVES
